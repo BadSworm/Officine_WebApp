@@ -1,14 +1,54 @@
-#logo-header {
-  background-color: red;
-}
-.navbar-header {
-  background-color: aqua;
+body {
+  background-color: white;
 }
 
-.navbar {
-  background-color: yellow;
+#header-blk {
+  background-color: white;
+  border-radius: 0px;
+  #logo-header {
+    #logo-cdt {
+      background-image: url(../images/logo_cdt.svg);
+      background-size: contain;
+      background-position: 70% 50%;
+      background-repeat: no-repeat;
+      margin-right: 0px;
+    }
+    #logo-ofvg {
+      background-image: url(../images/logo_ofvg_blue.svg);
+      background-size: contain;
+      background-position: 30% 50%;
+      background-repeat: no-repeat;
+      margin-left: 0px;
+    }
+  }
+  nav.navbar {
+    background-color: $darkPrimaryColor;
+    border-radius: 0px;
+    border-style: none;
+    #navlist {
+      li {
+        background-color: $darkPrimaryColor;
+      }
+      li.active a {
+        background-color: $lightPrimaryColor;
+      }
+    }
+  }
 }
 
-#sedibanner {
-  background-color: aquamarine;
+#page-cnt {
+  background-color: $backgroundColor;
+  #sedibanner {
+    background-color: $primaryColor;
+  }
+}
+
+.box {
+  background-color: $darkPrimaryColor;
+}
+
+#footer-cnt {
+  .footer-img {
+    background-color: $secondaryColor;
+  }
 }

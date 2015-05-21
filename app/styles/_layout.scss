@@ -1,27 +1,69 @@
-#logo-header {
-  height: 80px;
-}
-
-.navbar-header {}
-
-nav {}
+body {}
 
 #header-blk {
-  padding-left: 0px;
-  padding-right: 0px;
+  #logo-header {
+    div {
+      
+    }
+    #logo-cdt {
+      height: 80px;
+      width: 100%;
+      float: right;
+    }
+    #logo-ofvg {
+      float: left;
+      height: 80px;
+      width: 100%;
+      max-width: 350px;
+    }
+  }
+  nav {
+    width: 100%;
+    margin: auto;
+    li a {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+    #navheader {}
+    .navbar-right {}
+  }
 }
 
-#jumboslide.jumbotron {
-  padding: 0px;
+#jumboslide {
+  padding: 0px 0px 20px 0px;
   #slide {
     padding: 0px;
   }
 }
 
-#sedibanner {
-  margin: 20px;
+#page-cnt {
+  width: 80%;
+  #sedibanner {
+    text-align: center;
+    span {
+      height: 40px;
+      margin: 5px;
+    }
+  }
+  #call-btn-cnt {
+    width: 80%;
+    .box {
+      height: 200px;
+      margin: 20px;
+    }
+  }
+  #box-cnt {
+    width: 80%;
+    .box {
+      height: 350px;
+      margin: 10px;
+    }
+  }
 }
 
-#sedibanner {
-  span {display: block;}
+#footer-cnt {
+  .footer-img {
+    height: 80px;
+    margin: 10px;
+  }
 }

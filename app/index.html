@@ -29,116 +29,149 @@
   <!--[if lt IE 10]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-  <div id="header_blk" class="container-fluid">
+  <header id="header-blk" class="container-fluid">
     <div class="row">
       <div id="logo-header">
+        <div class="col-xs-6">
+          <div id="logo-ofvg">
+
+          </div>
+        </div>
+        <div class="col-xs-6">
+          <div id="logo-cdt">
+
+          </div>
+        </div>
       </div>
     </div>
-    <div class="row">
+    <div class="container-fluid">
       <nav class="navbar navbar-default" role="navigation">
-        <div class="container-fluid">
-          <div class="navbar-header col-sm-4">
-            <a href="#" class="navbar-brand">Nome utente</a>
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-          </div>
 
-          <div class="collapse navbar-collapse navbar-right col-sm-8">
-            <ul class="nav navbar-nav">
-              <li class="active"><a href="#">Servizi</a>
-              </li>
-              <li><a href="#">Sedi</a>
-              </li>
-              <li><a href="#">Ricambi</a>
-              </li>
-              <li><a href="#">Cliente</a>
-              </li>
-              <li><a href="#">Azienda</a>
-              </li>
-            </ul>
-          </div>
-          <!--.nav-collapse -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapsable-bar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
         </div>
+
+        <div id="collapsable-bar" class="collapse navbar-collapse navbar-right col-sm-8">
+          <ul id="navlist" class="nav navbar-nav">
+            <li class="active"><a href="#">Servizi</a>
+            </li>
+            <li><a href="#">Sedi</a>
+            </li>
+            <li><a href="#">Ricambi</a>
+            </li>
+            <li><a href="#">Cliente</a>
+            </li>
+            <li><a href="#">Azienda</a>
+            </li>
+          </ul>
+        </div>
+        <!-- .nav-collapse -->
       </nav>
     </div>
-  </div>
+  </header>
   <!-- end header-blk -->
   <!-- slick slideshow -->
-  <div id="jumboslide" class="jumbotron hidden-xs">
-    <div id="slide" class="slide-show container-fluid">
-      <div>
-        <img src="images/Slide_01_efficenza.jpg" class="img-responsive" alt="Responsive image">
-      </div>
-      <div>
-        <img src="images/Slide_02_sicurezza.jpg" class="img-responsive" alt="Responsive image">
-      </div>
-      <div>
-        <img src="images/Slide_03_risparmio.jpg" class="img-responsive" alt="Responsive image">
-      </div>
-    </div>
-  </div>
-  <!-- end jumboslide-->
-  <!-- bootstrap carousel -->
-  <!--   <div id="slideshow" class="carousel slide" data-ride="carousel" data-interval="3000">
-    Indicators
-    <ol class="carousel-indicators">
-      <li data-target="#slideshow" data-slide-to="0" class="active"></li>
-      <li data-target="#slideshow" data-slide-to="1"></li>
-      <li data-target="#slideshow" data-slide-to="2"></li>
-    </ol>
-  
-    Wrapper for slides
-    <div class="carousel-inner" role="listbox">
-      <div class="item active">
-        <img src="images/Slide_01_efficenza.jpg" class="img-responsive" alt="Responsive image">
-        <div class="carousel-caption">
-  
+  <section id="home-section">
+    <div id="jumboslide" class="jumbotron hidden-xs">
+      <div id="slide" class="slide-show container-fluid">
+        <div>
+          <img src="images/Slide_01_efficenza.jpg" class="img-responsive" alt="Responsive image">
         </div>
-      </div>
-      <div class="item">
-        <img src="images/Slide_02_sicurezza.jpg" class="img-responsive" alt="Responsive image">
-        <div class="carousel-caption">
+        <div>
+          <img src="images/Slide_02_sicurezza.jpg" class="img-responsive" alt="Responsive image">
         </div>
-      </div>
-      <div class="item">
-        <img src="images/Slide_03_risparmio.jpg" class="img-responsive" alt="Responsive image">
-        <div class="carousel-caption">
+        <div>
+          <img src="images/Slide_03_risparmio.jpg" class="img-responsive" alt="Responsive image">
         </div>
       </div>
     </div>
-  
-    Controls
-    <a class="left carousel-control" href="#slideshow" role="button" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#slideshow" role="button" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
-  </div> -->
-  <!-- end bootstrap carousel -->
-  <!--slideshow -->
-  <div id="page-cnt" class="container-fluid">
-    <div class="row">
-      <div id="sedibanner" class="col-sm-8 col-sm-push-2">
-        <div class="container">
-          <div class="row">
-            <span class="col-sm-3">Campoformido(UD)</span>
-            <span class="col-sm-3">Pavia di Udine(UD)</span>
-            <span class="col-sm-3">San Dorligo della valle(TS)</span>
-            <span class="col-sm-3">Portogruaro(VE)</span>
+    <!-- end jumboslide-->
+    <!-- page-cnt -->
+    <div id="page-cnt" class="container-fluid ">
+
+      <div id="sedibanner" class="col-sm-8 col-sm-push-2 vertical-center hidden-xs">
+        <div class="row ">
+          <div class="col-sm-6 col-lg-3 "><span class="btn">Campoformido(UD)</span>
+          </div>
+          <div class="col-sm-6 col-lg-3 "><span class="btn">Pavia di Udine(UD)</span>
+          </div>
+          <div class="col-sm-6 col-lg-3 "><span class="btn">San Dorligo della valle(TS)</span>
+          </div>
+          <div class="col-sm-6 col-lg-3 "><span class="btn">Portogruaro(VE)</span>
           </div>
         </div>
       </div>
+      <!-- end sedibanner -->
+      <div id="call-btn-cnt" class="container-fluid">
+        <div class="row center-block">
+          <div class="col-xs-12 col-md-4">
+            <div class="call-btn box">Lorem ipsum lokaz valuria</div>
+          </div>
+          <div class="col-xs-12 col-md-4">
+            <div class="call-btn box">Lorem ipsum lokaz valuria</div>
+          </div>
+          <div class="col-xs-12 col-md-4">
+            <div class="call-btn box">Lorem ipsum lokaz valuria</div>
+          </div>
+        </div>
+      </div>
+      <div id="box-cnt" class="container-fluid">
+        <div class="row center-block">
+          <div class="col-sm-12 col-md-6 center-block">
+            <p class="box">Box 1</p>
+          </div>
+          <div class="col-sm-12 col-md-6 center-block">
+            <p class="box">Box 2</p>
+          </div>
+          <div class="col-sm-12 col-md-6 center-block">
+            <p class="box">Box 3</p>
+          </div>
+          <div class="col-sm-12 col-md-6 center-block">
+            <p class="box">Box 4</p>
+          </div>
+          <div class="col-sm-12 col-md-6 center-block">
+            <p class="box">Box 5</p>
+          </div>
+          <div class="col-sm-12 col-md-6 center-block">
+            <p class="box">Box 6</p>
+          </div>
+        </div>
+      </div>
+      <!-- end box-cnt -->
     </div>
-  </div>
-  <!-- 
-            -->
+  </section>
+
+  <!-- end page-cnt -->
+  <!-- footer-cnt -->
+  <footer id="footer-cnt" class="container-fluid">
+    <div class="row center-block">
+      <div class="col-xs-6 col-sm-4">
+        <div class="footer-img"></div>
+      </div>
+      <div class="col-xs-6 col-sm-4">
+        <div class="footer-img"></div>
+      </div>
+      <div class="col-xs-6 col-sm-4">
+        <div class="footer-img"></div>
+      </div>
+      <div class="col-xs-6 col-sm-4">
+        <div class="footer-img"></div>
+      </div>
+      <div class="col-xs-6 col-sm-4">
+        <div class="footer-img"></div>
+      </div>
+      <div class="col-xs-6 col-sm-4">
+        <div class="footer-img"></div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- end footer-cnt -->
   <!-- build:js(.) scripts/vendor.js -->
   <!-- bower:js -->
   <script src="bower_components/jquery/dist/jquery.js"></script>

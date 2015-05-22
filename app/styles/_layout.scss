@@ -2,9 +2,7 @@ body {}
 
 #header-blk {
   #logo-header {
-    div {
-      
-    }
+    div {}
     #logo-cdt {
       height: 80px;
       width: 100%;
@@ -29,34 +27,33 @@ body {}
   }
 }
 
-#jumboslide {
-  padding: 0px 0px 20px 0px;
-  #slide {
-    padding: 0px;
-  }
-}
-
-#page-cnt {
-  width: 80%;
-  #sedibanner {
-    text-align: center;
-    span {
-      height: 40px;
-      margin: 5px;
+#home-section {
+  #jumboslide {
+    margin-bottom: 0px;
+    padding: 0px 0px 20px 0px;
+    #slide {
+      padding: 0px;
     }
-  }
-  #call-btn-cnt {
-    width: 80%;
-    .box {
-      height: 200px;
-      margin: 20px;
-    }
-  }
-  #box-cnt {
-    width: 80%;
-    .box {
-      height: 350px;
-      margin: 10px;
+    #page-cnt {
+      width: 80%;
+      #sedibanner {
+        text-align: center;
+        height: 40px;
+        margin: 5px;
+      }
+      #call-btn-cnt {
+        .box {
+          height: 200px;
+          margin: 20px;
+        }
+      }
+      #box-cnt {
+        p.box {
+          height: 350px;
+          margin: 10px;
+          padding: 20px;
+        }
+      }
     }
   }
 }

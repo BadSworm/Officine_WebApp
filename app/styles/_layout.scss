@@ -1,18 +1,19 @@
-body {}
+body {
+  margin: 0px;
+}
 
 #header-blk {
   #logo-header {
-    div {}
     #logo-cdt {
       height: 80px;
-      width: 100%;
       float: right;
     }
     #logo-ofvg {
       float: left;
       height: 80px;
-      width: 100%;
       max-width: 350px;
+      position: absolute;
+      left: 5%;
     }
   }
   nav {
@@ -34,25 +35,31 @@ body {}
     #slide {
       padding: 0px;
     }
-    #page-cnt {
+  }
+  #page-cnt {
+    width: 80%;
+    padding: 15px;
+    margin-bottom: 30px;
+    #sedibanner {
+      padding: 10px 20px;
+      margin: 5px;
+      .sede-btn {
+        padding: 10px 5px;
+      }
+    }
+    #call-btn-cnt {
+      width: 60%;
+      .box {
+        height: 200px;
+        margin: 20px;
+      }
+    }
+    #box-cnt {
       width: 80%;
-      #sedibanner {
-        text-align: center;
-        height: 40px;
-        margin: 5px;
-      }
-      #call-btn-cnt {
-        .box {
-          height: 200px;
-          margin: 20px;
-        }
-      }
-      #box-cnt {
-        p.box {
-          height: 350px;
-          margin: 10px;
-          padding: 20px;
-        }
+      p.box {
+        height: 300px;
+        margin: 10px;
+        padding: 20px;
       }
     }
   }

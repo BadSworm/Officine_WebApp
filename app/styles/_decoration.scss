@@ -6,19 +6,17 @@ body {
   background-color: white;
   border-radius: 0px;
   #logo-header {
-    #logo-cdt {
-      background-image: url(../images/logo_cdt.svg);
-      background-size: contain;
-      background-position: 70% 50%;
-      background-repeat: no-repeat;
-      margin-right: 0px;
-    }
     #logo-ofvg {
       background-image: url(../images/logo_ofvg_blue.svg);
       background-size: contain;
-      background-position: 30% 50%;
+      background-position: 50% 50%;
       background-repeat: no-repeat;
-      margin-left: 0px;
+    }
+    #logo-cdt {
+      background-image: url(../images/logo_cdt.svg);
+      background-size: contain;
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
     }
   }
   nav.navbar {
@@ -31,6 +29,9 @@ body {
       }
       li.active a {
         background-color: $lightPrimaryColor;
+      }
+      li:hover a {
+        background-color: red;
       }
     }
   }

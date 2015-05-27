@@ -50,7 +50,8 @@ module.exports = function (grunt) {
       },
       sass: {
         files: ['<%= config.app %>/styles/{,*/}*.{scss,sass}'],
-        tasks: ['sass:server', 'autoprefixer']
+        //tasks: ['sass:server', 'autoprefixer']
+        tasks: ['compass:server', 'autoprefixer']
       },
       styles: {
         files: ['<%= config.app %>/styles/{,*/}*.css'],
@@ -79,7 +80,7 @@ module.exports = function (grunt) {
       },
       livereload: {
         options: {
-          middleware: function(connect) {
+          middleware: function (connect) {
             return [
               connect.static('.tmp'),
               connect().use('/bower_components', connect.static('./bower_components')),
@@ -92,7 +93,7 @@ module.exports = function (grunt) {
         options: {
           open: false,
           port: 9001,
-          middleware: function(connect) {
+          middleware: function (connect) {
             return [
               connect.static('.tmp'),
               connect.static('test'),
@@ -149,6 +150,33 @@ module.exports = function (grunt) {
       }
     },
 
+    compass: {
+      options: {
+        sassDir: '<%= config.app %>/styles',
+        cssDir: '.tmp/styles',
+        imagesDir: '<%= config.app %>/images',
+        javascriptsDir: '<%= config.app %>/scripts',
+        fontsDir: '<%= config.app %>/styles/fonts',
+        generatedImagesDir: '.tmp/images/generated',
+        importPath: 'bower_components',
+        httpImagesPath: '../images',
+        httpGeneratedImagesPath: '../images/generated',
+        httpFontsPath: 'fonts',
+        relativeAssets: false,
+        assetCacheBuster: false
+      },
+      dist: {
+        options: {
+          generatedImagesDir: '<%= config.dist %>/images/generated'
+        }
+      },
+      server: {
+        options: {
+          debugInfo: true
+        }
+      }
+    },
+    /* original
     // Compiles Sass to CSS and generates necessary files if requested
     sass: {
       options: {
@@ -173,7 +201,7 @@ module.exports = function (grunt) {
         }]
       }
     },
-
+*/
     // Add vendor prefixed styles
     autoprefixer: {
       options: {
@@ -365,14 +393,16 @@ module.exports = function (grunt) {
     // Run some tasks in parallel to speed up build process
     concurrent: {
       server: [
-        'sass:server',
+        //'sass:server',
+        'compass:server',
         'copy:styles'
       ],
       test: [
         'copy:styles'
       ],
       dist: [
-        'sass',
+        'compass',
+        //'sass',
         'copy:styles',
         'imagemin',
         'svgmin'

@@ -1,55 +1,59 @@
+@import "compass/css3";
+@import "utility";
 body {
-  background-color: white;
-}
-
-#header-blk {
-  background-color: white;
-  border-radius: 0px;
-  #logo-header {
-    #logo-ofvg {
-      background-image: url(../images/logo_ofvg_blue.svg);
-      background-size: contain;
-      background-position: 50% 50%;
-      background-repeat: no-repeat;
-    }
-    #logo-cdt {
-      background-image: url(../images/logo_cdt.svg);
-      background-size: contain;
-      background-position: 50% 50%;
-      background-repeat: no-repeat;
-    }
-  }
-  nav.navbar {
-    background-color: $darkPrimaryColor;
-    border-radius: 0px;
-    border-style: none;
-    #navlist {
-      li {
-        background-color: $darkPrimaryColor;
+  width: 100%;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  #wrapper {
+    background-color: gainsboro;
+    .site-header {
+      color: white;
+      .site-logo {
+        background-color: yellow;
+        color: inherit;
+        .logo-sx {
+          background-color: #333;
+        }
+        .logo-dx {
+          background-color: #888;
+        }
       }
-      li.active a {
-        background-color: $lightPrimaryColor;
-      }
-      li:hover a {
+      .site-nav {
         background-color: red;
+        .client-nav {
+          background-color: orange;
+        }
+        .web-nav {
+          background-color: brown;
+        }
       }
     }
-  }
-}
-
-#page-cnt {
-  background-color: $backgroundColor;
-  #sedibanner {
-    background-color: $primaryColor;
-  }
-}
-
-.box {
-  background-color: $darkPrimaryColor;
-}
-
-#footer-cnt {
-  .footer-img {
-    background-color: $secondaryColor;
+    .site-container {
+      background-color: navajowhite;
+      .hero-container {
+        background-color: cornflowerblue;
+      }
+      .sedi-container {
+        background-color: navy;
+        .sede-btn {
+          background-color: olive;
+        }
+      }
+      .call-container {
+        background-color: pink;
+      }
+      .box-container {
+        background-color: dimgray;
+        .box-panel {
+          background-color: wheat;
+        }
+      }
+    }
+    .site-footer {
+      background-color: black;
+      .site-info {
+        background-color: gray;
+      }
+    }
   }
 }

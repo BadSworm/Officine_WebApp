@@ -7,3 +7,23 @@
   padding: 0 !important;
   margin: 0 !important;
 }
+
+#wrapper {
+  .site-header {
+    .site-logo {}
+    .site-nav {
+      .client-nav {}
+      .web-nav {}
+    }
+  }
+  .site-container {
+    .hero-container {}
+    .sedi-container {}
+    .call-container {}
+    .box-container {}
+  }
+  .site-footer {}
+  .site-info {
+    a {}
+  }
+}

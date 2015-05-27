@@ -16,6 +16,8 @@
   <link rel="stylesheet" href="bower_components/slick.js/slick/slick-theme.css" />
   <!-- endbower -->
   <!-- endbuild -->
+  <!-- compass -->
+  <link rel="stylesheet" href="bower_components/">
   <!-- build:css(.tmp) styles/main.css -->
   <link rel="stylesheet" href="styles/main.css">
   <!-- endbuild -->
@@ -29,147 +31,60 @@
   <!--[if lt IE 10]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-  <div id="wrapper" class="container-fluid nopadding">
-    <header id="header-blk" class="container-fluid nopadding">
-      <div class="row">
-        <div id="logo-header">
-          <div id="logo-ofvg" class="col-xs-6 center-block"></div>
-          <div id="logo-cdt" class="col-xs-6"></div>
-        </div>
-      </div>
-      <nav class="navbar navbar-default nopadding" role="navigation">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapsable-bar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-        </div>
-
-        <div id="collapsable-bar" class="collapse navbar-collapse navbar-right col-sm-8">
-          <ul id="navlist" class="nav navbar-nav">
-            <li class="active"><a href="#">Servizi</a>
-            </li>
-            <li><a href="#">Sedi</a>
-            </li>
-            <li><a href="#">Ricambi</a>
-            </li>
-            <li><a href="#">Cliente</a>
-            </li>
-            <li><a href="#">Azienda</a>
-            </li>
-          </ul>
-        </div>
-        <!-- .nav-collapse -->
+  <header class="site-header">
+    <div class="site-logo"><a href="">logo</a>
+    </div>
+    <div class="nav-container">
+      <nav class="site-nav no-bullet">
+        <ul class="web-nav ">
+          <li>Servizi</li>
+          <li>Sedi</li>
+          <li>Novità</li>
+          <li>E-Commerce</li>
+          <li>Azienda</li>
+          <li>Area Riservata</li>
+        </ul>
+        <ul class="client-nav">
+          <li>Log In</li>
+          <li>Log Out</li>
+          <li>Ordini</li>
+          <li>Stato Mezzi</li>
+        </ul>
       </nav>
-    </header>
-    <!-- end header-blk -->
-
-    <section id="home-section">
-      <div id="jumboslide" class="jumbotron hidden-xs">
-        <!-- slick slideshow -->
-        <div id="slide" class="slide-show container-fluid">
-          <div>
-            <img src="images/Slide_01_efficenza.jpg" class="img-responsive" alt="Responsive image">
-          </div>
-          <div>
-            <img src="images/Slide_02_sicurezza.jpg" class="img-responsive" alt="Responsive image">
-          </div>
-          <div>
-            <img src="images/Slide_03_risparmio.jpg" class="img-responsive" alt="Responsive image">
-          </div>
-        </div>
-        <!-- end slideshow -->
-      </div>
-      <!-- end jumboslide-->
-
-      <div id="page-cnt" class="container-fluid">
-        <div class="row">
-          <div id="sedibanner" class="col-sm-8 col-sm-push-2 vertical-center hidden-xs">
-
-            <div class="col-sm-6 col-lg-3 sede-btn">
-              <p>Campoformido(UD)</p>
-            </div>
-            <div class="col-sm-6 col-lg-3 sede-btn">
-              <p>Pavia di Udine(UD)</p>
-            </div>
-            <div class="col-sm-6 col-lg-3 sede-btn">
-              <p>San Dorligo della valle(TS)</p>
-            </div>
-            <div class="col-sm-6 col-lg-3 sede-btn">
-              <p>Portogruaro(VE)</p>
-            </div>
-          </div>
-        </div>
-        <!-- end sedibanner -->
-        <div id="call-btn-cnt" class="container-fluid">
-          <div class="row">
-            <div class="col-xs-4 col-md-4">
-              <div class="call-btn box vertical-center">CONTROLLA IL CALENDARIO LIMITAZIONI PER MEZZI PESANTI</div>
-            </div>
-            <div class="col-xs-4 col-md-4 ">
-              <div class="call-btn box vertical-center">LASCIACI UN FEEDBACK SUL SERVIZIO</div>
-            </div>
-            <div class="col-xs-4 col-md-4 ">
-              <div class="call-btn box vertical-center">PRENOTA LA TUA REVISIONE VEICOLARE</div>
-            </div>
-          </div>
-        </div>
-        <div id="box-cnt" class="container-fluid">
-          <div class="row center-block">
-            <div class="col-xs-12 col-md-6">
-              <p class="box">Box Servizi Ofvg</p>
-            </div>
-            <div class="col-xs-12 col-md-6">
-              <p class="box">Box Servizi Cdt</p>
-            </div>
-            <div class="col-xs-12 col-md-6">
-              <p class="box">Box Novita'</p>
-            </div>
-            <div class="col-xs-12 col-md-6">
-              <p class="box">Box Ricambi</p>
-            </div>
-            <div class="col-xs-12 col-md-6">
-              <p class="box">Box Sedi</p>
-            </div>
-            <div class="col-xs-12 col-md-6">
-              <p class="box">Box Azienda</p>
-            </div>
-          </div>
-        </div>
-        <!-- end box-cnt -->
-      </div>
-      <!-- end page-cnt -->
-    </section>
-
-    <!-- end home-section -->
-    <footer id="footer-cnt" class="container-fluid">
-      <div class="row center-block">
-        <div class="col-xs-6 col-sm-4">
-          <div class="footer-img"></div>
-        </div>
-        <div class="col-xs-6 col-sm-4">
-          <div class="footer-img"></div>
-        </div>
-        <div class="col-xs-6 col-sm-4">
-          <div class="footer-img"></div>
-        </div>
-        <div class="col-xs-6 col-sm-4">
-          <div class="footer-img"></div>
-        </div>
-        <div class="col-xs-6 col-sm-4">
-          <div class="footer-img"></div>
-        </div>
-        <div class="col-xs-6 col-sm-4">
-          <div class="footer-img"></div>
-        </div>
-      </div>
-    </footer>
-    <!-- end footer-cnt -->
-
+    </div>
+  </header>
+  <div class="site-content">
+    <div class="featured">
+      <h1>Advanced Bootstrap and SASS</h1>
+      <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint vero neque itaque! Eligendi soluta, exercitationem tenetur error culpa repellat, cum quo quas quis sed suscipit ex ut. Omnis, ipsa, beatae.</div>
+      <div>Quasi nobis error neque mollitia soluta cumque minima blanditiis deleniti perspiciatis voluptatem sed vero impedit, dolores! Numquam facilis dolorum, illo nihil vitae in dolore enim ex molestias cum doloremque odio.</div>
+      <div>Tenetur quos deserunt, nihil perspiciatis ea temporibus eius repudiandae natus animi debitis iure aperiam ducimus officia distinctio, nesciunt praesentium. Ea odio cupiditate enim laboriosam quibusdam nisi tenetur iusto, quae, temporibus.</div>
+      <div>Amet expedita suscipit vel, totam accusantium nesciunt cupiditate velit sit eius voluptatem praesentium quaerat quasi illo, inventore deserunt sed rerum dolores repellendus, excepturi maxime! Adipisci voluptas exercitationem et maiores. Voluptatibus.</div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos eaque eum iste natus repellat sit rerum et modi sed aliquam eligendi alias aliquid, error minima similique, labore, deserunt quia cupiditate.
+    </div>
   </div>
-  <!-- end wrapper -->
+  <div class="site-widgets">
+    <section class="widget">
+      <h2>Title</h2>
+    </section>
+    <section class="widget">
+      <h2>Title</h2>
+    </section>
+    <section class="widget">
+      <h2>Title</h2>
+    </section>
+  </div>
+
+  <footer class="site-footer">
+    <div class="site-info"><a href="#">footer link</a>
+    </div>
+  </footer>
+
+
+
+
+
+
+
   <!-- build:js(.) scripts/vendor.js -->
   <!-- bower:js -->
   <script src="bower_components/jquery/dist/jquery.js"></script>
@@ -188,6 +103,8 @@
   <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
   <script src="bower_components/jasny-bootstrap/dist/js/jasny-bootstrap.js"></script>
   <script src="bower_components/slick.js/slick/slick.min.js"></script>
+  <script src="bower_components/vega-lite/vega-lite.js"></script>
+  <script src="bower_components/compass/compass.js"></script>
   <!-- endbower -->
   <!-- endbuild -->
 

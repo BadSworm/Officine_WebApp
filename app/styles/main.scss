@@ -89,9 +89,10 @@ body {
     border-bottom: 0;
   }
 }
-
-@import "variable.scss";
+/* @import "variable.scss";
 @import "layout.scss";
 @import "decoration.scss";
 @import "typography.scss";
-@import "utility.scss";
+@import "utility.scss"; */
+
+@import "style.scss";

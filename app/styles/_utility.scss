@@ -1,3 +1,14 @@
+/*For testing*/
+
+*:not(body):not(html){
+  box-sizing: border-box;
+  border : 1px dashed #000;
+}
+.row {
+  min-height: 100px;
+}
+
+/* layout utility */
 .vertical-center {
   display: flex;
   align-items: center;
@@ -8,6 +19,8 @@
   margin: 0 !important;
 }
 
+
+/*skeleton*/
 #wrapper {
   .site-header {
     .site-logo {}

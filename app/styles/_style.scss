@@ -22,7 +22,8 @@ body {
       color: white;
       @include size(100%, 120px);
       .site-logo {
-        @include make-row();        margin-left: 0px;
+        @include make-row();
+        margin-left: 0px;
         margin-right: 0px;
         .logo-sx {
           @include make-xs-column(6);

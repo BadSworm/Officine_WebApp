@@ -1,0 +1,50 @@
+		/*Scheletro
+	#wrapper {
+		header {
+			#client_nav {}
+			#site_nav {}
+		}
+		section {
+			#banner {}
+			#sedi_panel {
+				.sede-btn{
+
+				}
+			}
+			#action_panel {
+			}
+			#box_panel {
+				.box{
+				}
+			}
+		}
+		footer {
+		}
+	}
+*/
+#wrapper {
+	header {
+		#client_nav {}
+		#site_nav {}
+	}
+	section {
+		#banner {}
+		#sedi_panel {
+			.sede-btn{
+
+			}
+		}
+		#action_panel {
+			.action-btn{min-height: 100px;}
+		}
+		#box_panel {
+			.box{
+				min-height: 300px;
+				min-width: 400px;
+			}
+		}
+	}
+	footer {
+		min-height: 100px;
+	}
+}

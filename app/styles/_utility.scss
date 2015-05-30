@@ -1,42 +1,42 @@
 /*For testing*/
 
-*:not(body):not(html){
-  box-sizing: border-box;
-  border : 1px dashed #000;
-}
-.row {
-  min-height: 100px;
+*:not(body):not(html) {
+	box-sizing: border-box;
+	border: 1px dashed #000;
 }
 
+/* .row {
+	min-height: 50px;
+} */
 /* layout utility */
+
 .vertical-center {
-  display: flex;
-  align-items: center;
+	display: flex;
+	align-items: center;
 }
 
 .nopadding {
-  padding: 0 !important;
-  margin: 0 !important;
+	padding: 0 !important;
+	margin: 0 !important;
 }
-
-
 /*skeleton*/
+
 #wrapper {
-  .site-header {
-    .site-logo {}
-    .site-nav {
-      .client-nav {}
-      .web-nav {}
-    }
-  }
-  .site-container {
-    .hero-container {}
-    .sedi-container {}
-    .call-container {}
-    .box-container {}
-  }
-  .site-footer {}
-  .site-info {
-    a {}
-  }
+	.site-header {
+		.site-logo {}
+		.site-nav {
+			.client-nav {}
+			.web-nav {}
+		}
+	}
+	.site-container {
+		.hero-container {}
+		.sedi-container {}
+		.call-container {}
+		.box-container {}
+	}
+	.site-footer {}
+	.site-info {
+		a {}
+	}
 }

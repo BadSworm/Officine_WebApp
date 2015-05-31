@@ -4,10 +4,9 @@
 	box-sizing: border-box;
 	border: 1px dashed #000;
 }
-
-/* .row {
+ .row{
 	min-height: 50px;
-} */
+}
 /* layout utility */
 
 .vertical-center {
@@ -20,23 +19,53 @@
 	margin: 0 !important;
 }
 /*skeleton*/
-
-#wrapper {
-	.site-header {
-		.site-logo {}
-		.site-nav {
-			.client-nav {}
-			.web-nav {}
+/*
+.wrapper {
+	.header {
+		.top-header {
+			.site-logo {}
+			.client-nav {
+				.client-nav-btn {}
+			}
+		}
+		.main-nav {
+			.site-nav {
+				.site-nav-btngrp {
+					.site-nav-btn {}
+				}
+			}
 		}
 	}
-	.site-container {
-		.hero-container {}
-		.sedi-container {}
-		.call-container {}
-		.box-container {}
+	.section {
+		.home-content {
+			.hero-banner {}
+			.sedi-panel {
+				.sede-btn {}
+			}
+			.action-panel {
+				.action-btn {}
+			}
+			.box-panel {
+				.box-container {
+					.box-header {
+						.box-title {}
+						.box-type {}
+					}
+					.box-panel {
+						.box-image {}
+						.box-text{}
+					}
+				}
+				.box-flag {}
+			}
+		}
 	}
-	.site-footer {}
-	.site-info {
-		a {}
+	.footer {
+		.footer-container {
+			.left-footer {}
+			.center-footer {}
+			.right-footer {}
+		}
 	}
 }
+*/

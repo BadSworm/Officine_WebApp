@@ -1,22 +1,53 @@
-	#wrapper {
-		header {
-			#client_nav {}
-			#site_nav {}
-		}
-		section {
-			#banner {}
-			#sedi_panel {
-				.sede-btn{
-
-				}
-			}
-			#action_panel {
-			}
-			#box_panel {
-				.box{background-color: red;
-				}
+@import "variable";
+.wrapper {
+	.header {
+		.top-header {
+			.site-logo {background-color: blue;}
+			.client-nav {background-color: red;
+				.client-nav-btn {}
 			}
 		}
-		footer {
+		.main-nav {
+			background-color: $navbarBackgroundColor;
+			.site-nav {background-color: yellow;
+				.site-nav-btngrp {
+					.site-nav-btn {}
+				}
+			}
 		}
 	}
+	.section {
+		background-color: $backgroundColor;
+		.home-content {
+			.hero-banner {}
+			.sedi-panel {
+				background-color: $sediBackgroundColor;
+				.sede-btn {}
+			}
+			.action-panel {
+				background-color: $actionBackgroundColor;
+				.action-btn {}
+			}
+			.box-panel {
+				.box-container {
+					.box-header {
+						.box-title {}
+						.box-type {}
+					}
+					.box-panel {
+						.box-image {}
+						.box-text {}
+					}
+				}
+				.box-flag {}
+			}
+		}
+	}
+	.footer {
+		.footer-container {
+			.left-footer {}
+			.center-footer {}
+			.right-footer {}
+		}
+	}
+}

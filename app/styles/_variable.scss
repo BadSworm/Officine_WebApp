@@ -1,16 +1,31 @@
-$primaryColor: #3F51B5;
-$secondaryColor: red;
-$darkPrimaryColor: #303F9F;
-$lightPrimaryColor: #C5CAE9;
-$textColor: #FFFFFF;
-$accentColor: #607D8B;
-$primaryTextColor: #212121;
-$secondaryTextColor: #727272;
-$backgroundColor:#ECEFF1;
-$lightOrange: #333;
-$darkOrange: #666;
 
 
+$backgroundColor: #eceff1;
+$navbarBackgroundColor:#1f459f;
+
+$primaryOfvgColor:#2f57b5;
+$secondaryOfvgColor:#b1b1b1;
+$primaryCdtColor:#f07f20;
+$secondaryCdtColor:#212121;
+
+$sediBackgroundColor:$primaryOfvgColor;
+$sediTextColor:white;
+
+$actionBackgroundColor:white;
+$actionTextColor:$primaryOfvgColor;
+
+$boxOfvgBackgroundColor:white;
+$boxOfvgHeaderBackgroundColor:$secondaryOfvgColor;
+$boxOfvgHeaderTextColor:$primaryOfvgColor;
+$boxOfvgTextColor:black;
+
+$boxCdtBackgroundColor:white;
+$boxCdtHeaderBackgroundColor:$secondaryCdtColor;
+$boxCdtHeaderTextColor:$primaryCdtColor;
+$boxCdtTextColor:black;
+
+$footerBackgroundColor:black;
+$footerTextColor:text;
 // When true, asset path helpers are used, otherwise the regular CSS `url()` is used.
 // When there no function is defined, `fn('')` is parsed as string that equals the right hand side
 // NB: in Sass 3.3 there is a native function: function-exists(twbs-font-path)

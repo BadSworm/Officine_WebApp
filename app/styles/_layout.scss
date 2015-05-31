@@ -1,50 +1,86 @@
-		/*Scheletro
-	#wrapper {
-		header {
-			#client_nav {}
-			#site_nav {}
-		}
-		section {
-			#banner {}
-			#sedi_panel {
-				.sede-btn{
+		/* mixin bootstrap layout :
+@include make-container-fixed($gutter: $grid-gutter-width)
+@include make-row();
+@include make-xx-column($value);
+@include make-xx-column-push($value);
+@include make-xx-column-pull($columns);
+@include make-xx-column-offset($columns);
+@include center-block();
+@include size($width,$height);
+@include square($size);
+@include label-variant($color);
+@include panel-variant($border, $heading-text-color, $heading-bg-color, $heading-border);
+@include button-variant($color, $background,$border);
+@include gradient-horizontal[vertical,horizontal-three-colors]($start-color, $end-color, $start-percent, $end-percent);
+@include img-responsive($display:block);
+@include img-retina($file-1x,$file-2x,$width-1x,$width-2x);
+		*/
 
+		.wrapper {
+			.header {
+				@include make-row();
+				.top-header {
+					height: 50px;
+					@include make-row();
+					.site-logo {
+						@include make-lg-column(3);
+						@include size(100px,40px);
+					}
+					.client-nav {
+						@include make-lg-column(6);
+						.client-nav-btn {
+							@include size(80px,40px);
+						}
+					}
+				}
+				.main-nav {
+					height: 100px;
+					@include make-row();
+					.site-nav {
+						height: 70px;
+						@include make-lg-column(6);
+						.site-nav-btngrp {
+							.site-nav-btn {}
+						}
+					}
 				}
 			}
-			#action_panel {
+			.section {
+				@include make-row();
+				.home-content {
+					.hero-banner {
+						height: 400px;
+					}
+					.sedi-panel {
+						@include make-row();
+						.sede-btn {}
+					}
+					.action-panel {
+						@include make-row();
+						.action-btn {}
+					}
+					.box-panel {
+						@include make-row();
+						.box-container {
+							.box-header {
+								.box-title {}
+								.box-type {}
+							}
+							.box-panel {
+								.box-image {}
+								.box-text {}
+							}
+						}
+						.box-flag {}
+					}
+				}
 			}
-			#box_panel {
-				.box{
+			.footer {
+				@include make-row();
+				.footer-container {
+					.left-footer {}
+					.center-footer {}
+					.right-footer {}
 				}
 			}
 		}
-		footer {
-		}
-	}
-*/
-#wrapper {
-	header {
-		#client_nav {}
-		#site_nav {}
-	}
-	section {
-		#banner {}
-		#sedi_panel {
-			.sede-btn{
-
-			}
-		}
-		#action_panel {
-			.action-btn{min-height: 100px;}
-		}
-		#box_panel {
-			.box{
-				min-height: 300px;
-				min-width: 400px;
-			}
-		}
-	}
-	footer {
-		min-height: 100px;
-	}
-}

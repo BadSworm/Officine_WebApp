@@ -1,137 +1,48 @@
-@import "variable";
-/*skeleton*/
-/*
-#wrapper {
-			#header {
-				.top-header {
-					.site-logo {}
-					.client-nav {
-						.client-nav-btn {}
-					}
-				}
-				.main-nav {
-					.site-nav {
-						.site-nav-btngrp {
-							.site-nav-btn {}
-						}
-					}
-				}
-			}
-			#section {
-				.home-content {
-					.hero-banner {}
-					.home-container{
-						.sedi-panel {
-							.sede-btn {}
-						}
-						.action-panel {
-							.action-btn {}
-						}
-						.box-panel {
-							.box {
-								.box-flag {}
-								.box-container {
-									.box-header {
-										.box-title {}
-										.box-type {}
-									}
-									.box-info {
-										.box-image {}
-										.box-text {}
-									}
-								}
-							}
-						}
-					}
-}
-			}
-			#footer {
-				.footer-container {
-					.left-footer {}
-					.center-footer {}
-					.right-footer {}
-				}
-			}
-		}
-*/
 
-#wrapper {
-	background-color: white;
-	#header {
-		.top-header {
-			.site-logo {
-				background-color: blue;
-			}
-			.client-nav {
-				background-color: red;
-				.client-nav-btn {}
-			}
+		#wrapper {
+		  header {
+		    .top-header {
+		      .left-logo {}
+		      .right-logo {
+		      }
+		    }
+		  }
+		  nav {
+        background-color: $navbarBackgroundColor;
+      }
+		  section {
+		    .home-content {
+		      .hero-banner {}
+		      .home-container {
+		        .sedi-panel {
+		          .sede-btn {}
+		        }
+		        .action-panel {
+		          .action-btn {}
+		        }
+		        .box-panel {
+		          .box {
+		            .box-flag {}
+		            .box-container {
+		              .box-header {
+		                .box-title {}
+		                .box-type {}
+		              }
+		              .box-info {
+		                .box-image {}
+		                .box-text {}
+		              }
+		            }
+		          }
+		        }
+		      }
+		    }
+		  }
+		  footer {
+		    .footer-container {
+		      .left-footer {}
+		      .center-footer {}
+		      .right-footer {}
+		    }
+		  }
 		}
-		.main-nav {
-			background-color: blue; //$navbarBackgroundColor;
-			color: white;
-			.site-nav {
-				background-color: yellow;
-				.site-nav-btngrp {
-					.site-nav-btn {}
-				}
-			}
-		}
-	}
-	#section {
-		background-color: gray; //$backgroundColor;
-		.home-content {
-			.hero-banner {
-				background-image: url(http://lorempixel.com/1920/800/transport);
-				background-size: cover;
-				background-color: aqua;
-			}
-			.sedi-panel {
-				background-color: purple; //$sediBackgroundColor;
-				.sede-btn {}
-			}
-			.action-panel {
-				background-color: green; //$actionBackgroundColor;
-				.action-btn {}
-			}
-			.box-panel {
-				background-color: green;
-				.box {
-					.box-container {
-						background-color: purple;
-						.box-header {
-							background-color: wheat;
-							.box-title {
-								background-color: green;
-							}
-							.box-type {
-								background-color: brown;
-							}
-						}
-						.box-info {
-							background-color: yellow;
-							.box-image {
-								background-color: red;
-							}
-							.box-text {
-								background-color: blue;
-							}
-						}
-					}
-					.box-flag {
-						background-color: pink;
-					}
-				}
-			}
-		}
-	}
-	#footer {
-		background-color: black;
-		color: white;
-		.footer-container {
-			.left-footer {}
-			.center-footer {}
-			.right-footer {}
-		}
-	}
-}

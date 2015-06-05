@@ -1,80 +1,279 @@
+/* bootstrap sass mixin */
+
+// Alerts
+/*
+@include alert-variant($background, $border, $text-color);
+*/
+
+// Background Variant
+/*
+@include bg-variant($parent, $color);
+*/
+
+// Border Radius
+/*
+@include border-top-radius($radius);
+@include border-right-radius($radius);
+@include border-bottom-radius($radius);
+@include border-left-radius($radius);
+ */
+
+// Buttons
+/*
+@include button-variant($color, $background, $border);
+@include button-size($padding-vertical, $padding-horizontal, $font-size, $line-height, $border-radius);
+ */
+
+// Center Block
+/*
+@include center-block();
+*/
+
+// Clearfix
+/*
+@include clearfix();
+*/
+
+// Forms
+/* @include form-control-validation($text-color: #555, $border-color: #ccc, $background-color: #f5f5f5);
+@include form-control-focus($color: $input-border-focus);
+@include input-size($parent, $input-height, $padding-vertical, $padding-horizontal, $font-size, $line-height, $border-radius);
+ */
+
+// Gradients
+/* @include gradient-horizontal($start-color: #555, $end-color: #333, $start-percent: 0%, $end-percent: 100%);
+@include gradient-vertical($start-color: #555, $end-color: #333, $start-percent: 0%, $end-percent: 100%);
+@include gradient-directional($start-color: #555, $end-color: #333, $deg: 45deg);
+@include gradient-horizontal-three-colors($start-color: #00b3ee, $mid-color: #7a43b6, $color-stop: 50%, $end-color: #c3325f);
+@include gradient-vertical-three-colors($start-color: #00b3ee, $mid-color: #7a43b6, $color-stop: 50%, $end-color: #c3325f);
+@include gradient-radial($inner-color: #555, $outer-color: #333);
+@include gradient-striped($color: rgba(255,255,255,.15), $angle: 45deg);
+  */
+
+// Grid Framework
+/* 
+//@include make-grid-columns();
+@include float-grid-columns();
+@include calc-grid-column($index, $class, $type);
+@include loop-grid-columns($columns, $class, $type);
+@include make-grid($class); */
+
+// Grid
+/* @include container-fixed($gutter: $grid-gutter-width);
+@include make-row($gutter: $grid-gutter-width);
+@include make-xs-column($columns, $gutter: $grid-gutter-width);
+@include make-xs-column-offset($columns);
+@include make-xs-column-push($columns);
+@include make-xs-column-pull($columns);
+@include make-sm-column($columns, $gutter: $grid-gutter-width);
+@include make-sm-column-offset($columns);
+@include make-sm-column-push($columns);
+@include make-sm-column-pull($columns);
+@include make-md-column($columns, $gutter: $grid-gutter-width);
+@include make-md-column-offset($columns);
+@include make-md-column-push($columns);
+@include make-md-column-pull($columns);
+@include make-lg-column($columns, $gutter: $grid-gutter-width);
+@include make-lg-column-offset($columns);
+@include make-lg-column-push($columns);
+@include make-lg-column-pull($columns);
+  */
+
+// Hide Text
+/* 
+@include text-hide();
+  */
+
+// Image
+/* 
+@include img-responsive($display: block);
+@include img-retina($file-1x, $file-2x, $width-1x, $height-1x);
+  */
+
+// Labels
+/* 
+@include label-variant($color);
+ */
+
+// List Group   
+/* 
+@include list-group-item-variant($state, $background, $color);
+  */
+
+// Nav Divider
+/* 
+@include nav-divider($color: #e5e5e5);
+*/
+
+// Nav Vertical Align
+/* 
+@include navbar-vertical-align($element-height);
+  */
+
+// Opacity
+/* 
+@include opacity($opacity);
+*/
+
+// Pagination
+/* 
+@include pagination-size($padding-vertical, $padding-horizontal, $font-size, $border-radius);
+*/
+
+// Panels
+/* 
+@include panel-variant($border, $heading-text-color, $heading-bg-color, $heading-border);
+  */
+
+// Progress Bar
+/* 
+@include progress-bar-variant($color);
+  */
+
+// Reset Filter 
+/* 
+@include reset-filter();
+*/
+
+// Resize
+/*
+@include resizable($direction);
+*/
+
+// Responsive Visibility
+/* 
+@include responsive-visibility($parent);
+@include responsive-invisibility($parent);
+*/
+
+// Size
+/* 
+@include size($width, $height);
+@include square($size);
+*/
+
+// Tab Focus
+/* 
+@include tab-focus();
+  */
+
+// Table Row
+/* 
+@include table-row-variant($state, $background);
+*/
+
+// Text Emphasis
+/* 
+@include text-emphasis-variant($parent, $color);
+*/
+
+// Text Overflow
+/* 
+@include text-overflow();
+  */
+
+// Vendor Prefixes
+/* @include animation($animation);
+@include animation-name($name);
+@include animation-duration($duration);
+@include animation-timing-function($timing-function);
+@include animation-delay($delay);
+@include animation-iteration-count($iteration-count);
+@include animation-direction($direction);
+@include animation-fill-mode($fill-mode);
+@include backface-visibility($visibility);
+@include box-shadow($shadow...);
+@include box-sizing($boxmodel);
+@include content-columns($column-count, $column-gap: $grid-gutter-width);
+@include hyphens($mode: auto);
+@include placeholder($color: $input-color-placeholder);
+@include scale($ratio...);
+@include scaleX($ratio);
+@include scaleY($ratio);
+@include skew($x, $y);
+@include translate($x, $y);
+@include translate3d($x, $y, $z);
+@include rotate($degrees);
+@include rotateX($degrees);
+@include rotateY($degrees);
+@include perspective($perspective);
+@include perspective-origin($perspective);
+@include transform-origin($origin);
+@include transition($transition...);
+@include transition-property($transition-property...);
+@include transition-delay($transition-delay);
+@include transition-duration($transition-duration...);
+@include transition-timing-function($timing-function);
+@include transition-transform($transition...);
+@include user-select($select); */
 /*For testing*/
 
 *:not(body):not(html) {
-box-sizing: border-box;
-border: 1px dashed #000;
-}
-
-.row {
-	/* 	min-height: 50px; */
+  box-sizing: border-box;
+  border: 1px dashed #000;
 }
 /* layout utility */
 
-.vertical-center {
-	display: flex;
-	align-items: center;
-}
-
 @mixin no-padding() {
-	padding: 0 !important;
-	margin: 0 !important;
+  padding: 0 !important;
+  margin: 0 !important;
 }
 
-.nopadding {
-	@include no-padding();
+.no-padding {
+  @include no-padding();
 }
 /*skeleton*/
-/*
+
 #wrapper {
-			#header {
-				.top-header {
-					.site-logo {}
-					.client-nav {
-						.client-nav-btn {}
-					}
-				}
-				.main-nav {
-					.site-nav {
-						.site-nav-btngrp {
-							.site-nav-btn {}
-						}
-					}
-				}
-			}
-			#section {
-				.home-content {
-					.hero-banner {}
-					.home-container{
-						.sedi-panel {
-							.sede-btn {}
-						}
-						.action-panel {
-							.action-btn {}
-						}
-						.box-panel {
-							.box {
-								.box-flag {}
-								.box-container {
-									.box-header {
-										.box-title {}
-										.box-type {}
-									}
-									.box-info {
-										.box-image {}
-										.box-text {}
-									}
-								}
-							}
-						}
-					}
+  header {
+    .top-header {
+      .left-logo {}
+      .right-logo {
+        img {}
+      }
+    }
+    .navbar {
+      .navbar-header {
+        .navbar-toggle {}
+        .navbar-brand {}
+      }
+      .navbar-collapse {
+        .nav {}
+      }
+    }
+  }
+  section {
+    #slideshow {}
+    #home-container {
+      #sedi-container {
+        .sedi-panel {
+          margin: 20px 10px;
+          .sede-btn {
+            a {}
+          }
+        }
+      }
+      #action-container {
+        .action-panel {
+          
+          margin: 20px auto;
+          .action-btn {
+            @include size(150px);
+            margin: 10px auto;
+            a {
+              @include coverer;
+            }
+          }
+        }
+      }
+      #box-container {
+        .box-panel {
+          .box {
+            @include size(300px, 200px);
+          }
+        }
+      }
+    }
+  }
+  footer {}
 }
-			}
-			#footer {
-				.footer-container {
-					.left-footer {}
-					.center-footer {}
-					.right-footer {}
-				}
-			}
-		}
-*/

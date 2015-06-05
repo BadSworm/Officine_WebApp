@@ -17,7 +17,7 @@
 		/*skeleton*/
 		/*
 #wrapper {
-			#header {
+			header {
 				.top-header {
 					.site-logo {}
 					.client-nav {
@@ -32,7 +32,7 @@
 					}
 				}
 			}
-			#section {
+			section {
 				.home-content {
 					.hero-banner {}
 					.home-container{
@@ -60,7 +60,7 @@
 					}
 }
 			}
-			#footer {
+			footer {
 				.footer-container {
 					.left-footer {}
 					.center-footer {}
@@ -69,86 +69,35 @@
 			}
 		}
 */
-
-		@import "variable";
-		body {
-			margin: 0px;
-			padding: 0px;
-		}
-		.container {
-			max-width: 1680px;
-		}
+		
 		#wrapper {
-			min-height: 1000px;
-			#header {
-				@include make-row();
-				.top-header {height : 100px;
-					.site-logo {
-						@include make-xs-column(3);
-					}
-					.client-nav {
-						@include make-xs-column(9);
-						.client-nav-btn {}
-					}
-				}
-				.main-nav {
-					.site-nav {
-
-						.site-nav-btngrp {
-							.site-nav-btn {}
-						}
-					}
-				}
-			}
-			#section {
-				@include make-row();
-				.home-content {
-					.hero-banner {
-						height: 400px;
-						img {}
-					}
-					.home-container {
-						@include container-fixed();
-						width: 80%;
-						.sedi-container {
-							.sedi-panel {
-								.sede-btn {}
-							}
-						}
-						.action-panel {
-							.action-btn {}
-						}
-						.box-panel {
-							.box {
-								.box-flag {}
-								.box-container {
-									.box-header {
-										.box-title {}
-										.box-type {}
-									}
-									.box-info {
-										.box-image {}
-										.box-text {}
-									}
-								}
-							}
-						}
-					}
-				}
-			}
-			#footer {
-				@include make-row();
-				.footer-container {
-					height: 80px;
-					.left-footer {
-						@include make-xs-column(4);
-					}
-					.center-footer {
-						@include make-xs-column(4);
-					}
-					.right-footer {
-						@include make-xs-column(4);
-					}
-				}
-			}
+		  @include bp(min, 1440px) {
+		    margin: auto;
+		    width: 1440px;
+		  }
+		  header {
+		    .top-header {
+		      .left-logo {}
+		      .right-logo {
+		        img {
+		          float: right;
+		        }
+		      }
+		    }
+		    nav.navbar {
+          min-height: inherit;
+          padding-top: 20px;
+          padding-bottom: 20px;
+          margin-bottom: 0px;
+		      .navbar-brand {
+            height: auto;
+          }
+		      a {
+		        padding-top: 0px;
+		        padding-bottom: 0px;
+		        margin-left: 10px;
+		        margin-right: 10px;
+		      }
+		    }
+		  }
 		}

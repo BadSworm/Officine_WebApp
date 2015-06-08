@@ -1,103 +1,95 @@
-		/* mixin bootstrap layout :
-@include container-fixed($gutter: $grid-gutter-width)
-@include make-row();
-@include make-xx-column($value);
-@include make-xx-column-push($value);
-@include make-xx-column-pull($columns);
-@include make-xx-column-offset($columns);
-@include center-block();
-@include size($width,$height);
-@include square($size);
-@include label-variant($color);
-@include panel-variant($border, $heading-text-color, $heading-bg-color, $heading-border);
-@include button-variant($color, $background,$border);
-@include gradient-horizontal[vertical,horizontal-three-colors]($start-color, $end-color, $start-percent, $end-percent);
-@include img-responsive($display:block);
-@include img-retina($file-1x,$file-2x,$width-1x,$width-2x);*/
-		/*skeleton*/
-		/*
 #wrapper {
-			header {
-				.top-header {
-					.site-logo {}
-					.client-nav {
-						.client-nav-btn {}
-					}
-				}
-				.main-nav {
-					.site-nav {
-						.site-nav-btngrp {
-							.site-nav-btn {}
-						}
-					}
-				}
-			}
-			section {
-				.home-content {
-					.hero-banner {}
-					.home-container{
-						.sedi-panel {
-							.sede-btn {}
-						}
-						.action-panel {
-							.action-btn {}
-						}
-						.box-panel {
-							.box {
-								.box-flag {}
-								.box-container {
-									.box-header {
-										.box-title {}
-										.box-type {}
-									}
-									.box-info {
-										.box-image {}
-										.box-text {}
-									}
-								}
-							}
-						}
-					}
-}
-			}
-			footer {
-				.footer-container {
-					.left-footer {}
-					.center-footer {}
-					.right-footer {}
-				}
-			}
-		}
-*/
-		
-		#wrapper {
-		  @include bp(min, 1440px) {
-		    margin: auto;
-		    width: 1440px;
-		  }
-		  header {
-		    .top-header {
-		      .left-logo {}
-		      .right-logo {
-		        img {
-		          float: right;
-		        }
-		      }
-		    }
-		    nav.navbar {
-          min-height: inherit;
-          padding-top: 20px;
-          padding-bottom: 20px;
-          margin-bottom: 0px;
-		      .navbar-brand {
-            height: auto;
+  @include bp(min, 1440px) {
+    margin: auto;
+    width: 1440px;
+  }
+  header {
+    .top-header {
+      .left-logo {
+        img {
+          height: 80px;
+          width: 300px;
+        }
+      }
+      .right-logo {
+        img {
+          float: right;
+          height: 80px;
+          width: 150px;
+        }
+      }
+    }
+    nav.navbar {
+      min-height: inherit;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      margin-bottom: 0px;
+      .navbar-brand {
+        height: auto;
+      }
+      a {
+        padding-top: 0px;
+        padding-bottom: 0px;
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+    }
+  }
+  section {
+    #slideshow {}
+    #home-container {
+      #sedi-container {
+        width: 80%;
+        padding: 15px 5px;
+        margin: 30px auto;
+        .sede-btn {
+          white-space: normal;
+        }
+      }
+      #action-container {
+        .action-btn-container {
+          height: 150px;
+          .action-btn {
+            height: 100%;
+            max-width: 170px;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            a {
+              white-space: normal;
+              vertical-align: middle;
+            }
           }
-		      a {
-		        padding-top: 0px;
-		        padding-bottom: 0px;
-		        margin-left: 10px;
-		        margin-right: 10px;
-		      }
-		    }
-		  }
-		}
+        }
+      }
+      #box-container {
+        .box-panel {
+          .box {
+            .box-header {}
+            .box-content {}
+            .box-label {
+              position: relative;
+              top: -180px;
+              left: -30px;
+              background-image: url(http://lorempixel.com/16/30/);
+              background-repeat: no-repeat;
+              background-position: left bottom;
+              width: 50%;
+              h4 {
+                position: relative;
+                right: -16px;
+                background-color: black;
+                padding: 5px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  @media (min-width: 1200px) {
+    .container {
+      max-width: 1200px;
+    }
+  }
+}

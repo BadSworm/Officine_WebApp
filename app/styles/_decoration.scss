@@ -1,48 +1,50 @@
-
-		#wrapper {
-		  header {
-		    .top-header {
-		      .left-logo {}
-		      .right-logo {
-		      }
-		    }
-		  }
-		  nav {
-        background-color: $navbarBackgroundColor;
+#wrapper {
+  background-color: $backgroundColor;
+  box-shadow: 0 0 16px #A6A6A6;
+  header {
+    .top-header {
+      .left-logo {
+        img {}
       }
-		  section {
-		    .home-content {
-		      .hero-banner {}
-		      .home-container {
-		        .sedi-panel {
-		          .sede-btn {}
-		        }
-		        .action-panel {
-		          .action-btn {}
-		        }
-		        .box-panel {
-		          .box {
-		            .box-flag {}
-		            .box-container {
-		              .box-header {
-		                .box-title {}
-		                .box-type {}
-		              }
-		              .box-info {
-		                .box-image {}
-		                .box-text {}
-		              }
-		            }
-		          }
-		        }
-		      }
-		    }
-		  }
-		  footer {
-		    .footer-container {
-		      .left-footer {}
-		      .center-footer {}
-		      .right-footer {}
-		    }
-		  }
-		}
+      .right-logo {
+        img {}
+      }
+    }
+    nav {
+      background-color: $navbarBackgroundColor;
+      border-radius: 0px;
+      border: 0px solid;
+    }
+  }
+  section {
+    .hero-banner {}
+    #home-container {
+      #sedi-container {
+        background-color: $primaryOfvgColor;
+        .sede-btn {
+          background-color: $primaryOfvgColor;
+          border-radius: 0px;
+          border: 0px solid;
+        }
+      }
+      #action-container {
+        .action-btn-container {
+          .action-btn {
+            background-color: white;
+            border-color : $primaryOfvgColor;
+              box-shadow: 0 0 16px #A6A6A6;
+            a {
+            }
+          }
+        }
+      }
+    }
+  }
+  footer {
+    .footer-container {
+      .left-footer {}
+      .center-footer {}
+      .right-footer {}
+    }
+  }
+}

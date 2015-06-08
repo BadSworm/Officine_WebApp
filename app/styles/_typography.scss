@@ -1,22 +1,63 @@
-
 @import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,900);
-
-
-
 #wrapper {
-  font-family: 'Lato','Open Sans', sans-serif;  
+  font-family: 'Lato', 'Open Sans', sans-serif;
+  color: white;
   header {
     .top-header {
       .left-logo {}
       .right-logo {}
     }
-  }
-  nav {
-    text-transform: uppercase;
-    font-weight: 300;
-    a {
-      color: $navbarTextColor;
-
+    .navbar {
+      .navbar-header {
+        .navbar-toggle {}
+        .navbar-brand {
+          color: $navbarTextColor;
+        }
+      }
+      .navbar-collapse {
+        .nav {
+          text-transform: uppercase;
+          font-weight: 300;
+          li {
+            a {
+              color: $navbarTextColor;
+            }
+          }
+        }
+      }
     }
- }
+  }
+  section {
+    #slideshow {}
+    #home-container {
+      #sedi-container {
+        .sede-btn {
+            color: white;
+        }
+      }
+      #action-container {
+        .action-btn {
+          a {
+            text-transform: uppercase;
+            font-weight: 700;
+            color:$primaryOfvgColor;
+          }
+        }
+      }
+      #box-container {
+        .box-panel {
+          .box {
+            .box-header {}
+            .box-content {}
+            .box-label {
+              h4 {}
+            }
+          }
+        }
+      }
+    }
+  }
+  footer {
+    .footer-panel {}
+  }
 }

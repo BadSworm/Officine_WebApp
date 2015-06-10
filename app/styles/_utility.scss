@@ -28,7 +28,18 @@
       }
       .navbar-collapse {
         .nav {
-          li {}
+          li {
+            a {}
+          }
+          .dropdown {
+            .dropdown-menu {
+              li {
+                a {}
+                .ofvgMenuItem {}
+                .cdtMenuItem {}
+              }
+            }
+          }
         }
       }
     }
@@ -37,19 +48,34 @@
     #slideshow {}
     #home-container {
       #sedi-container {
-        .sede-btn {}
+        #sedi-panel {
+          .sede-btn {}
+        }
       }
       #action-container {
         .action-btn-container {
           .action-btn {
-            a {
-            }
+            a {}
           }
         }
       }
       #box-container {
         .box-panel {
           .box {
+            .box-header {}
+            .box-content {}
+            .box-label {
+              h4 {}
+            }
+          }
+          .box.cdt-box {
+            .box-header {}
+            .box-content {}
+            .box-label {
+              h4 {}
+            }
+          }
+          .box.ofvg-box {
             .box-header {}
             .box-content {}
             .box-label {

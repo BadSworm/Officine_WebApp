@@ -20,7 +20,20 @@
           font-weight: 300;
           li {
             a {
-              color: $navbarTextColor;
+              @include hoverer(color, $navbarTextColor, $navbarBackgroundColor);
+            }
+          }
+          .dropdown {
+            .dropdown-menu {
+              li {
+                a {}
+                .ofvgMenuItem {
+                  @include hoverer(color, $secondaryOfvgColor, white);
+                }
+                .cdtMenuItem {
+                  @include hoverer(color, $secondaryCdtColor, white);
+                }
+              }
             }
           }
         }
@@ -32,23 +45,44 @@
     #home-container {
       #sedi-container {
         .sede-btn {
-            color: white;
+          color: $sediTextColor;
+          font-weight: 500;
+          font-size: 0.9em;
         }
       }
       #action-container {
         .action-btn {
           a {
             text-transform: uppercase;
-            font-weight: 700;
-            color:$primaryOfvgColor;
+            font-size: 1.2em;
+            font-weight: 900;
+            color: $actionTextColor;
+            @include bp(max,1200px) {
+              font-size : 1em;
+              font-weight: 700;
+            }
           }
         }
       }
       #box-container {
         .box-panel {
           .box {
-            .box-header {}
+            .box-header {h3{text-align: right;}}
             .box-content {}
+            .box-label {
+              h4 {}
+            }
+          }
+          .box.cdt-box {
+            .box-header {color:$boxCdtHeaderTextColor;}
+            .box-content {color:$boxCdtTextColor;}
+            .box-label {
+              h4 {}
+            }
+          }
+          .box.ofvg-box {
+            .box-header {color:$boxOfvgHeaderTextColor;}
+            .box-content {color:$boxOfvgTextColor;}
             .box-label {
               h4 {}
             }
@@ -58,6 +92,9 @@
     }
   }
   footer {
-    .footer-panel {}
+    color:$footerTextColor;
+    .footer-panel {
+      text-align: center;
+    }
   }
 }

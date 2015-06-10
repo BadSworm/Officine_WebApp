@@ -10,17 +10,47 @@
         img {}
       }
     }
-    nav {
+    .navbar {
       background-color: $navbarBackgroundColor;
       border-radius: 0px;
       border: 0px solid;
+      .navbar-header {
+        .navbar-toggle {}
+        .navbar-brand {}
+      }
+      .navbar-collapse {
+        .nav {
+          li {
+            a {
+              @include hoverer(background-color, $navbarBackgroundColor, $navbarHoverColor);
+            }
+          }
+          .dropdown {
+            .dropdown-menu {
+              border: 0px solid;
+              background-color: transparent;
+              box-shadow: none;
+              li {
+                a {}
+                .ofvgMenuItem {
+                  background-color: $primaryOfvgColor;
+                }
+                .cdtMenuItem {
+                  background-color: $primaryCdtColor;
+                }
+              }
+            }
+          }
+        }
+      }
     }
   }
   section {
     .hero-banner {}
     #home-container {
       #sedi-container {
-        background-color: $primaryOfvgColor;
+        background-color: $sediBackgroundColor;
+        box-shadow: 0 0 6px #A6A6A6;
         .sede-btn {
           background-color: $primaryOfvgColor;
           border-radius: 0px;
@@ -30,10 +60,42 @@
       #action-container {
         .action-btn-container {
           .action-btn {
-            background-color: white;
-            border-color : $primaryOfvgColor;
-              box-shadow: 0 0 16px #A6A6A6;
-            a {
+            background-color: $actionBackgroundColor;
+            border-color: $primaryOfvgColor;
+            box-shadow: 0 0 16px #A6A6A6;
+            a {}
+          }
+        }
+      }
+      #box-container {
+        .box-panel {
+          .box {
+            box-shadow: 0 0 6px #A6A6A6;
+            .box-header {}
+            .box-content {}
+            .box-label {
+              //box-shadow: 1px 1px 3px #A6A6A6;
+              h4 {}
+            }
+          }
+          .box.cdt-box {
+            background-color: $boxCdtBackgroundColor;
+            .box-header {
+              background-color: $boxCdtHeaderBackgroundColor;
+            }
+            .box-content {}
+            .box-label {
+              background-color: $boxCdtLabelBackgroundColor;
+            }
+          }
+          .box.ofvg-box {
+            background-color: $boxOfvgBackgroundColor;
+            .box-header {
+              background-color: $boxOfvgHeaderBackgroundColor;
+            }
+            .box-content {}
+            .box-label {
+              background-color: $boxOfvgLabelBackgroundColor;
             }
           }
         }
@@ -41,6 +103,7 @@
     }
   }
   footer {
+    background-color: $footerBackgroundColor;
     .footer-container {
       .left-footer {}
       .center-footer {}

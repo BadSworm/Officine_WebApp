@@ -1,14 +1,15 @@
+
+//override bootstrap variable
+$grid-columns:              24;
+$grid-gutter-width:         12px ;
+
 $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
 // bower:scss
 @import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
 @import "juice/dist/_juice.scss";
 @import "sass-web-fonts/_web-fonts.scss";
 // endbower
-@import "variable.scss";
-@import "utility.scss";
-@import "layout.scss";
-@import "decoration.scss";
-@import "typography.scss";
+
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
@@ -96,5 +97,9 @@ body {
     border-bottom: 0;
   }
 }
-
+@import "variable.scss";
+@import "utility.scss";
+@import "layout.scss";
+@import "decoration.scss";
+@import "typography.scss";
 

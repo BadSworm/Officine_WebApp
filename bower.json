@@ -6,6 +6,7 @@
     "modernizr": "~2.8.2",
     "compass": "~0.5.3",
     "juice": "~1.0.1",
-    "sass-web-fonts": "~1.1.0"
+    "sass-web-fonts": "~1.1.0",
+    "bootstrap": "~3.3.5"
   }
 }

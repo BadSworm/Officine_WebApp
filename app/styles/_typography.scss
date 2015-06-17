@@ -19,6 +19,9 @@
           text-transform: uppercase;
           font-weight: 300;
           li {
+            .cdt-text{
+              color: $primaryCdtColor;
+            }
             a {
               @include hoverer(color, $navbarTextColor, $navbarBackgroundColor);
             }

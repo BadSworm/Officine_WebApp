@@ -180,6 +180,12 @@ body {
       margin: 10px auto;
       display: flex;
       align-items: center;
+      img{
+        max-height: 30px;
+      }
+      #fiat-logo{
+        max-height: 80px;
+      }
       @include bp(300px, 600px) {
         display: block;
         margin: 5px auto;
